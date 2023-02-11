@@ -15,7 +15,8 @@ export default function Login() {
 
   mojoauth.signIn().then(payload => {
     // const userObj = JSON.parse(payload);
-    console.log(payload.user.email);
+    const user = payload.user.email;
+    console.log(user);
   })
 }, [payload])
   return (
